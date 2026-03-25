@@ -13,7 +13,7 @@ import 'package:bhadabook/presentation/core/widgets/bb_image_grid.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_progress_bar.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_text_field.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_bottom_sheet.dart';
-import 'package:bhadabook/presentation/onboarding/bloc/onboarding_bloc.dart';
+import 'package:bhadabook/application/onboarding/bloc/onboarding_bloc.dart';
 
 class OnboardingStep3Screen extends StatefulWidget {
   const OnboardingStep3Screen({super.key});

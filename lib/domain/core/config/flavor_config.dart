@@ -1,5 +1,6 @@
 enum Flavor { dev, staging, prod }
 
+/// Pure data class — no static state. Pass via constructor through main.dart.
 class FlavorConfig {
   final Flavor flavor;
   final String appName;
@@ -13,16 +14,7 @@ class FlavorConfig {
     this.showDebugBanner = false,
   });
 
-  static FlavorConfig _instance = const FlavorConfig(
-    flavor: Flavor.dev,
-    appName: 'BhadaBook Dev',
-    bundleId: 'com.bhadabook.dev',
-    showDebugBanner: true,
-  );
-
-  static FlavorConfig get instance => _instance;
-  static void initialize(FlavorConfig config) => _instance = config;
-
-  bool get isDev => flavor == Flavor.dev;
-  bool get isProd => flavor == Flavor.prod;
+  bool get isDev     => flavor == Flavor.dev;
+  bool get isStaging => flavor == Flavor.staging;
+  bool get isProd    => flavor == Flavor.prod;
 }

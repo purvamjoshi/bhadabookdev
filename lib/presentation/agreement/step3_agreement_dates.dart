@@ -10,7 +10,7 @@ import 'package:bhadabook/domain/core/extensions/format_extension.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_button.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_card.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_progress_bar.dart';
-import 'package:bhadabook/presentation/agreement/bloc/agreement_bloc.dart';
+import 'package:bhadabook/application/agreement/bloc/agreement_bloc.dart';
 
 class AgreementStep3Screen extends StatefulWidget {
   final Map<String, dynamic> extra;

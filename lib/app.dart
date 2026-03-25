@@ -7,13 +7,13 @@ import 'package:bhadabook/domain/core/config/flavor_config.dart';
 import 'package:bhadabook/domain/core/config/injection.dart';
 import 'package:bhadabook/domain/core/services/navigation_services/navigation_service.dart';
 import 'package:bhadabook/domain/core/services/navigation_services/routers/routing_config.dart';
-import 'package:bhadabook/presentation/auth/bloc/auth_bloc.dart';
-import 'package:bhadabook/presentation/home/bloc/home_bloc.dart';
-import 'package:bhadabook/presentation/property/bloc/property_bloc.dart';
-import 'package:bhadabook/presentation/tenant/bloc/tenant_bloc.dart';
-import 'package:bhadabook/presentation/agreement/bloc/agreement_bloc.dart';
-import 'package:bhadabook/presentation/payment/bloc/payment_bloc.dart';
-import 'package:bhadabook/presentation/onboarding/bloc/onboarding_bloc.dart';
+import 'package:bhadabook/application/auth/bloc/auth_bloc.dart';
+import 'package:bhadabook/application/home/bloc/home_bloc.dart';
+import 'package:bhadabook/application/property/bloc/property_bloc.dart';
+import 'package:bhadabook/application/tenant/bloc/tenant_bloc.dart';
+import 'package:bhadabook/application/agreement/bloc/agreement_bloc.dart';
+import 'package:bhadabook/application/payment/bloc/payment_bloc.dart';
+import 'package:bhadabook/application/onboarding/bloc/onboarding_bloc.dart';
 
 class BhadaBookApp extends StatefulWidget {
   final FlavorConfig flavor;

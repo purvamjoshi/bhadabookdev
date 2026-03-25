@@ -11,7 +11,7 @@ import 'package:bhadabook/presentation/core/widgets/bb_button.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_card.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_radio_card.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_text_field.dart';
-import 'package:bhadabook/presentation/property/bloc/property_bloc.dart';
+import 'package:bhadabook/application/property/bloc/property_bloc.dart';
 
 class EditPropertyScreen extends StatefulWidget {
   final String propertyId;

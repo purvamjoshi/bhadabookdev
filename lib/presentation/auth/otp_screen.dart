@@ -9,7 +9,7 @@ import 'package:bhadabook/domain/core/config/injection.dart';
 import 'package:bhadabook/domain/core/services/navigation_services/navigation_service.dart';
 import 'package:bhadabook/domain/core/extensions/format_extension.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_button.dart';
-import 'package:bhadabook/presentation/auth/bloc/auth_bloc.dart';
+import 'package:bhadabook/application/auth/bloc/auth_bloc.dart';
 
 class OtpScreen extends StatefulWidget {
   final String phone;

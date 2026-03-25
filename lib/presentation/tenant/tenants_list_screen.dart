@@ -12,7 +12,7 @@ import 'package:bhadabook/presentation/core/widgets/bb_button.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_card.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_empty_state.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_shimmer.dart';
-import 'package:bhadabook/presentation/tenant/bloc/tenant_bloc.dart';
+import 'package:bhadabook/application/tenant/bloc/tenant_bloc.dart';
 
 class TenantsListScreen extends StatefulWidget {
   const TenantsListScreen({super.key});

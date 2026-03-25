@@ -8,7 +8,7 @@ import 'package:bhadabook/domain/core/config/injection.dart';
 import 'package:bhadabook/domain/core/services/navigation_services/navigation_service.dart';
 import 'package:bhadabook/domain/core/services/navigation_services/routers/route_name.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_button.dart';
-import 'package:bhadabook/presentation/auth/bloc/auth_bloc.dart';
+import 'package:bhadabook/application/auth/bloc/auth_bloc.dart';
 
 class PhoneInputScreen extends StatefulWidget {
   const PhoneInputScreen({super.key});

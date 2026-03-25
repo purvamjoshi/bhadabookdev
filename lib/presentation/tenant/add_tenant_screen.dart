@@ -9,7 +9,7 @@ import 'package:bhadabook/domain/tenant/models/tenant_dto.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_button.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_card.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_text_field.dart';
-import 'package:bhadabook/presentation/tenant/bloc/tenant_bloc.dart';
+import 'package:bhadabook/application/tenant/bloc/tenant_bloc.dart';
 
 class AddTenantScreen extends StatefulWidget {
   /// Optional propertyId — pre-links tenant if provided

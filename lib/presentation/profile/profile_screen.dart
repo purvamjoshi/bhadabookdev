@@ -7,7 +7,7 @@ import 'package:bhadabook/domain/core/config/injection.dart';
 import 'package:bhadabook/domain/core/services/navigation_services/navigation_service.dart';
 import 'package:bhadabook/domain/core/services/navigation_services/routers/route_name.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_card.dart';
-import 'package:bhadabook/presentation/auth/bloc/auth_bloc.dart';
+import 'package:bhadabook/application/auth/bloc/auth_bloc.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});

@@ -16,7 +16,7 @@ import 'package:bhadabook/presentation/core/widgets/bb_shimmer.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_smart_tab.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_tag.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_progress_bar.dart';
-import 'package:bhadabook/presentation/property/bloc/property_bloc.dart';
+import 'package:bhadabook/application/property/bloc/property_bloc.dart';
 
 class PropertiesListScreen extends StatefulWidget {
   const PropertiesListScreen({super.key});

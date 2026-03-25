@@ -7,7 +7,7 @@ import 'package:bhadabook/presentation/core/widgets/bb_button.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_progress_bar.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_text_field.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_radio_card.dart';
-import 'package:bhadabook/presentation/onboarding/bloc/onboarding_bloc.dart';
+import 'package:bhadabook/application/onboarding/bloc/onboarding_bloc.dart';
 
 class OnboardingStep1Screen extends StatefulWidget {
   const OnboardingStep1Screen({super.key});

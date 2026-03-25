@@ -12,7 +12,7 @@ import 'package:bhadabook/presentation/core/widgets/bb_button.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_card.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_radio_card.dart' show BBOptionChip;
 import 'package:bhadabook/presentation/core/widgets/bb_text_field.dart';
-import 'package:bhadabook/presentation/payment/bloc/payment_bloc.dart';
+import 'package:bhadabook/application/payment/bloc/payment_bloc.dart';
 
 class MarkPaymentScreen extends StatefulWidget {
   final Payment payment;

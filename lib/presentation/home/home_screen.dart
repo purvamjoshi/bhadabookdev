@@ -14,7 +14,7 @@ import 'package:bhadabook/presentation/core/widgets/bb_empty_state.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_shimmer.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_smart_tab.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_tag.dart';
-import 'package:bhadabook/presentation/home/bloc/home_bloc.dart';
+import 'package:bhadabook/application/home/bloc/home_bloc.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});

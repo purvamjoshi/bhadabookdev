@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:bhadabook/domain/core/constants/app_colors.dart';
 import 'package:bhadabook/domain/core/constants/app_text_styles.dart';
-import 'package:bhadabook/presentation/auth/bloc/auth_bloc.dart';
+import 'package:bhadabook/application/auth/bloc/auth_bloc.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});

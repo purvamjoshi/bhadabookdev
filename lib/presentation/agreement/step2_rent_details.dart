@@ -11,7 +11,7 @@ import 'package:bhadabook/presentation/core/widgets/bb_card.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_progress_bar.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_radio_card.dart' show BBOptionChip;
 import 'package:bhadabook/presentation/core/widgets/bb_text_field.dart';
-import 'package:bhadabook/presentation/agreement/bloc/agreement_bloc.dart';
+import 'package:bhadabook/application/agreement/bloc/agreement_bloc.dart';
 
 class AgreementStep2Screen extends StatefulWidget {
   final Map<String, dynamic> extra;
