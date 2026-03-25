@@ -13,10 +13,10 @@ void main() async {
   setupLocator();
 
   const flavor = FlavorConfig(
-    flavor: Flavor.prod,
-    appName: 'BhadaBook',
-    bundleId: 'com.bhadabook.app',
-    showDebugBanner: false,
+    flavor: Flavor.dev,
+    appName: 'BhadaBook Dev',
+    bundleId: 'com.bhadabook.dev',
+    showDebugBanner: true,
   );
 
   runApp(const BhadaBookApp(flavor: flavor));
