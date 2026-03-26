@@ -6,6 +6,7 @@ import 'package:bhadabook/domain/core/config/injection.dart';
 import 'package:bhadabook/domain/core/services/navigation_services/navigation_service.dart';
 import 'package:bhadabook/domain/core/extensions/format_extension.dart';
 import 'package:bhadabook/domain/core/mock/mock_data.dart';
+import 'package:bhadabook/domain/notifications/models/notification_dto.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_card.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_empty_state.dart';
 

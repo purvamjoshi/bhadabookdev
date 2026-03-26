@@ -31,7 +31,7 @@ class _SplashScreenState extends State<SplashScreen> with SingleTickerProviderSt
     // Dark gradient background
     Container(decoration: const BoxDecoration(gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: AppColors.gradientDark, stops: [0.0, 0.45, 1.0]))),
     // Block pattern
-    Positioned.fill(child: Opacity(opacity: 0.07, child: CustomPaint(painter: _GridPainter()))),
+    Positioned.fill(child: Opacity(opacity: 0.07, child: CustomPaint(painter: GridPainter()))),
     // Logo
     Center(child: FadeTransition(opacity: _fade, child: ScaleTransition(scale: _scale, child: const _Logo(light: true)))),
   ]));
@@ -51,7 +51,7 @@ class _Logo extends StatelessWidget {
   }
 }
 
-class _GridPainter extends CustomPainter {
+class GridPainter extends CustomPainter {
   @override
   void paint(Canvas c, Size s) {
     final p = Paint()..color = Colors.white..strokeWidth = 0.8;

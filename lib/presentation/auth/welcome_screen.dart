@@ -6,7 +6,7 @@ import 'package:bhadabook/domain/core/config/injection.dart';
 import 'package:bhadabook/domain/core/services/navigation_services/navigation_service.dart';
 import 'package:bhadabook/domain/core/services/navigation_services/routers/route_name.dart';
 import 'package:bhadabook/presentation/core/widgets/bb_button.dart';
-import 'package:bhadabook/presentation/auth/splash_screen.dart' show _GridPainter;
+import 'package:bhadabook/presentation/auth/splash_screen.dart' show GridPainter;
 
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
@@ -18,7 +18,7 @@ class WelcomeScreen extends StatelessWidget {
         // Light gradient background
         Container(decoration: const BoxDecoration(gradient: LinearGradient(begin: Alignment.topCenter, end: Alignment.bottomCenter, colors: AppColors.gradientLight))),
         // Subtle grid
-        Positioned.fill(child: Opacity(opacity: 0.10, child: CustomPaint(painter: _GridPainter()))),
+        Positioned.fill(child: Opacity(opacity: 0.10, child: CustomPaint(painter: GridPainter()))),
         // City illustration placeholder
         Positioned(top: 40, left: 0, right: 0, bottom: 340,
           child: Center(child: Stack(alignment: Alignment.bottomCenter, children: [
