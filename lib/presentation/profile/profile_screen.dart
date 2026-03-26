@@ -46,7 +46,7 @@ class ProfileScreen extends StatelessWidget {
         const SizedBox(height: 12),
         BBCard(child: InkWell(
           onTap: () => _confirmLogout(context),
-          borderRadius: BorderRadius.circular(S.cardR),
+          borderRadius: S.cardR,
           child: Padding(padding: const EdgeInsets.symmetric(vertical: 4), child: Row(children: [
             Container(width: 36, height: 36, decoration: const BoxDecoration(color: AppColors.errorSurface, shape: BoxShape.circle),
               child: const Icon(Icons.logout_rounded, color: AppColors.error, size: 18)),
@@ -83,7 +83,7 @@ class _Section extends StatelessWidget {
       return Column(children: [
         InkWell(
           onTap: e.value.onTap,
-          borderRadius: BorderRadius.circular(S.cardR),
+          borderRadius: S.cardR,
           child: Padding(padding: const EdgeInsets.symmetric(vertical: 4), child: Row(children: [
             Container(width: 36, height: 36, decoration: BoxDecoration(color: AppColors.grey100, borderRadius: BorderRadius.circular(8)),
               child: Icon(e.value.icon, color: AppColors.navy, size: 18)),

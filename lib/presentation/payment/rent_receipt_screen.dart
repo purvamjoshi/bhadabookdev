@@ -62,7 +62,7 @@ class RentReceiptScreen extends StatelessWidget {
       // Paid stamp
       Container(
         width: double.infinity, padding: const EdgeInsets.symmetric(vertical: 12),
-        decoration: BoxDecoration(color: AppColors.successSurface, borderRadius: BorderRadius.circular(S.cardR)),
+        decoration: BoxDecoration(color: AppColors.successSurface, borderRadius: S.cardR),
         child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
           const Icon(Icons.check_circle_outline, color: AppColors.success, size: 18),
           const SizedBox(width: 6),
