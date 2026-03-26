@@ -18,7 +18,7 @@ class AppTheme {
       titleTextStyle: TextStyle(fontFamily: 'Poppins', fontSize: 18, fontWeight: FontWeight.w600, color: AppColors.navy),
       systemOverlayStyle: SystemUiOverlayStyle(statusBarBrightness: Brightness.light, statusBarIconBrightness: Brightness.dark),
     ),
-    cardTheme: CardTheme(
+    cardTheme: CardThemeData(
       color: AppColors.cardBg, elevation: 0,
       shape: RoundedRectangleBorder(borderRadius: S.cardR, side: const BorderSide(color: AppColors.border, width: 1)),
       margin: EdgeInsets.zero,
