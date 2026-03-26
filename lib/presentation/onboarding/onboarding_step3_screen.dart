@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:image_picker/image_picker.dart';
@@ -24,14 +23,14 @@ class _State extends State<OnboardingStep3Screen> {
   final _name    = TextEditingController();
   final _addr    = TextEditingController();
   final _city    = TextEditingController();
-  final _images  = <File>[];
+  final _images  = <XFile>[];
   String? _err;
 
   @override void dispose() { _name.dispose(); _addr.dispose(); _city.dispose(); super.dispose(); }
 
   void _addImg() => showImagePicker(context,
-    onCamera: () async { final f = await ImagePicker().pickImage(source: ImageSource.camera, imageQuality: 80); if (f != null && mounted) setState(() => _images.add(File(f.path))); },
-    onGallery: () async { final fs = await ImagePicker().pickMultiImage(imageQuality: 80); if (fs.isNotEmpty && mounted) setState(() => _images.addAll(fs.map((f) => File(f.path)))); },
+    onCamera: () async { final f = await ImagePicker().pickImage(source: ImageSource.camera, imageQuality: 80); if (f != null && mounted) setState(() => _images.add(f)); },
+    onGallery: () async { final fs = await ImagePicker().pickMultiImage(imageQuality: 80); if (fs.isNotEmpty && mounted) setState(() => _images.addAll(fs)); },
   );
 
   void _complete() {

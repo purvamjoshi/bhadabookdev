@@ -1,9 +1,10 @@
-import 'dart:io';
+import 'dart:typed_data';
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 import 'package:bhadabook/domain/core/constants/app_colors.dart';
 
 class BBImageGrid extends StatelessWidget {
-  final List<File> images;
+  final List<XFile> images;
   final VoidCallback onAdd;
   final ValueChanged<int> onRemove;
   final double itemSize;
@@ -17,7 +18,15 @@ class BBImageGrid extends StatelessWidget {
       ...List.generate(images.length, (i) => Padding(
         padding: const EdgeInsets.only(right: 8),
         child: Stack(children: [
-          ClipRRect(borderRadius: BorderRadius.circular(8), child: Image.file(images[i], width: itemSize, height: itemSize, fit: BoxFit.cover)),
+          ClipRRect(
+            borderRadius: BorderRadius.circular(8),
+            child: FutureBuilder<Uint8List>(
+              future: images[i].readAsBytes(),
+              builder: (ctx, snap) => snap.hasData
+                  ? Image.memory(snap.data!, width: itemSize, height: itemSize, fit: BoxFit.cover)
+                  : Container(width: itemSize, height: itemSize, color: AppColors.grey100),
+            ),
+          ),
           Positioned(top: 2, right: 2, child: GestureDetector(
             onTap: () => onRemove(i),
             child: Container(width: 20, height: 20, decoration: const BoxDecoration(color: AppColors.error, shape: BoxShape.circle), child: const Icon(Icons.close, size: 12, color: AppColors.white)),
@@ -60,9 +69,8 @@ class BBNetworkImageGrid extends StatelessWidget {
   }
 
   Widget _img(String url, double w, double h) => Container(
-    width: w, height: h, decoration: BoxDecoration(color: AppColors.primarySurface),
-    child: Icon(Icons.image_outlined, color: AppColors.primary.withOpacity(0.4), size: 40),
-    // Replace Icon with: Image.network(url, fit: BoxFit.cover, width: w, height: h)
+    width: w, height: h, decoration: const BoxDecoration(color: AppColors.primarySurface),
+    child: const Icon(Icons.image_outlined, color: AppColors.grey400, size: 40),
   );
 
   Widget _placeholder() => Container(

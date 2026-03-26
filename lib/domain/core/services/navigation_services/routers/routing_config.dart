@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart' show defaultTargetPlatform, TargetPlatform;
 import 'route_name.dart';
 import 'package:bhadabook/presentation/auth/splash_screen.dart';
 import 'package:bhadabook/presentation/auth/welcome_screen.dart';
@@ -85,7 +85,7 @@ Route<dynamic> generateRoute(RouteSettings settings) {
 }
 
 Route<dynamic> _getPageRoute(Widget page, RouteSettings settings) {
-  if (Platform.isIOS) {
+  if (defaultTargetPlatform == TargetPlatform.iOS) {
     return CupertinoPageRoute(builder: (_) => page, settings: settings);
   }
   return MaterialPageRoute(builder: (_) => page, settings: settings);
